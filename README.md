@@ -1,5 +1,7 @@
 # TRON offline permission signer
 
+![Fireworks Blockchain Tech logo](assets/fireworks-blockchain-tech.svg)
+
 Contact: fireworksblockchaintech@gmail.com
 
 This project separates online transaction creation from offline signing. The
@@ -52,3 +54,4 @@ workflow. `.env` is plaintext secret storage: use only on a trusted machine,
 never commit or share it, and remove it after use. Do not use this command if
 you want multisig: it assigns all owner and active authority to one address.
 It cannot guarantee inclusion before another transaction from a sweeper.
+
