@@ -8,10 +8,10 @@ interface ILoanToken {
     function transferFrom(address from, address to, uint256 value) external returns (bool);
 }
 
-/// @title UnsecuredLendingPool
+/// @title CryptoLendingPool
 /// @notice Educational single-token lending pool. No borrower collateral is taken.
 /// @dev Not audited and not suitable for production or real funds.
-contract UnsecuredLendingPool {
+contract CryptoLendingPool {
     uint256 public constant APR_BPS = 10; // 0.10% simple annual interest
     uint256 public constant BASIS_POINTS = 10_000;
     uint256 public constant YEAR_SECONDS = 365 days;

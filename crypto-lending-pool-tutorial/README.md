@@ -1,4 +1,4 @@
-# secured Crypto Lending Pool — Tutorial
+# Crypto Lending Pool — Tutorial
 
 **Contact:** fireworksblockchaintech@gmail.com
 
@@ -18,7 +18,7 @@ The 10% condition is measured in the configured pool token. A Solidity contract 
 
 ## Contract
 
-[`contracts/UnsecuredLendingPool.sol`](contracts/UnsecuredLendingPool.sol) holds one ERC-20/TRC-20-shaped asset. Deploy one pool per token per network. EVM and TRON balances are separate; this is not a bridge or a cross-chain pool.
+[`contracts/CryptoLendingPool.sol`](contracts/CryptoLendingPool.sol) holds one ERC-20/TRC-20-shaped asset. Deploy one pool per token per network. EVM and TRON balances are separate; this is not a bridge or a cross-chain pool.
 
 Core tutorial flow:
 
@@ -26,7 +26,7 @@ Core tutorial flow:
 2. A borrower approves no collateral; they call `borrow(amount, termSeconds)` after holding the 10% token balance. The pool transfers the loan amount to them.
 3. The borrower calls `repay(loanId)` for the full principal plus accrued simple interest.
 4. Lenders call `withdraw(shares)` when the pool has enough liquid tokens.
-5. After maturity plus the grace period, anyone may call `recordDefault(loanId)` to recognize the unsecured loss.
+5. After maturity plus the grace period, anyone may call `recordDefault(loanId)` to record a default and recognize the pool loss.
 
 ## EVM and TRON deployment notes
 
@@ -46,5 +46,5 @@ The contract expects a conventional token with `balanceOf`, `transfer`, and `tra
 
 ## Important limitations
 
-This is a compact educational contract, not a production lending protocol. It has no identity or credit assessment, collateral, insurance, oracle, liquidation, governance, transferable share token, partial repayment, reserve fund, or automated collections. Unsecured borrowers may never repay. The 0.10% rate does not make deposits safe or guarantee lender returns. Smart contract and token failures can permanently lose funds.
+This is a compact educational contract, not a production lending protocol. It has no identity or credit assessment, locked collateral, insurance, oracle, liquidation, governance, transferable share token, partial repayment, reserve fund, or automated collections. Borrowers may never repay, and lenders can lose principal. The 0.10% rate does not make deposits safe or guarantee lender returns. Smart contract and token failures can permanently lose funds.
 
