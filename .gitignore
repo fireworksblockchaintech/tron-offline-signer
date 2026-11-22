@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+node_modules
+unsigned-takeover.json
+signed-takeover.json

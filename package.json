@@ -1,0 +1,19 @@
+{
+  "name": "tron-offline-signer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "inspect": "node verify.js",
+    "sign": "node sign.js",
+    "rescue": "node rescue.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "tronweb": "^6.5.2"
+  }
+}
