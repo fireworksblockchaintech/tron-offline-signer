@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Fireworks Blockchain Tech mark</title>
+  <desc id="desc">A teal blockchain hexagon surrounding a warm amber spark.</desc>
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="26%" r="85%">
+      <stop offset="0" stop-color="#162842" />
+      <stop offset="1" stop-color="#08111F" />
+    </radialGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#54E7D2" />
+      <stop offset="1" stop-color="#18BFA9" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)" />
+  <circle cx="256" cy="256" r="210" fill="#0B1627" stroke="#263951" stroke-width="7" />
+  <circle cx="256" cy="256" r="188" fill="none" stroke="#1D3148" stroke-width="4" />
+  <g fill="none" stroke="url(#teal)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M256 104 388 180v152l-132 76-132-76V180z" stroke-width="13" />
+    <path d="M256 256V120m0 136 117-68m-117 68 117 68m-117-68-117 68m117-68-117-68" stroke-width="7" opacity=".72" />
+  </g>
+  <g fill="#0B1627" stroke="#54E7D2" stroke-width="10">
+    <circle cx="256" cy="104" r="19" />
+    <circle cx="388" cy="180" r="19" />
+    <circle cx="388" cy="332" r="19" />
+    <circle cx="256" cy="408" r="19" />
+    <circle cx="124" cy="332" r="19" />
+    <circle cx="124" cy="180" r="19" />
+  </g>
+  <path d="M256 206 275 237 306 256 275 275 256 306 237 275 206 256 237 237z" fill="#FFBD70" />
+  <circle cx="256" cy="256" r="10" fill="#FFF6E8" />
+</svg>
+
